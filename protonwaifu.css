@@ -1,0 +1,147 @@
+/* ==UserStyle==
+@name           ProtonWaifu
+@version        0.8
+@description    ProtonMail, but with more waifu's.
+@preprocessor   stylus
+
+ -- AUTHOR STUFF --
+@namespace      Tsubaki Kouryuu
+@author         Tsubaki Kouryuu
+@homepageURL    https://github.com/tsubaki-kouryuu/ProtonWaifu
+@supportURL     https://github.com/tsubaki-kouryuu/ProtonWaifu
+
+@var text  image "Sidebar Background (Place in quotes)" '""'
+
+==/UserStyle== */
+
+@-moz-document domain("mail.protonmail.com"), domain("calendar.protonmail.com"), domain("drive.protonmail.com"), domain("account.protonmail.com"), domain("account.protonvpn.com"), domain("proton.me") {
+    
+    body {
+        font-family: "SF Compact";
+    }
+    
+    .sidebar {
+        background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%,  rgba(0, 0, 0, 0.25) 30%,  rgba(0, 0, 0, 0.25) 80%, rgba(0, 0, 0, 0.9) 100%), url('https://files.catbox.moe/73ware.png');
+        background-size: cover;
+        background-position: center;
+        width: 17.625rem;
+        font-weight:500;
+    }
+    
+    @media (min-width: 42.51em) {
+        .logo-container {
+            width: 18.225rem;
+        }
+    }
+    
+    [data-testid="account:back-to-app"],
+    .button-solid-norm {
+        background-color: rgba(109,74,255,0.5);
+        backdrop-filter: blur(18px) saturate(180%);
+        border: 1px solid rgba(209, 213, 219, 0.15);
+        font-size:15px;
+        text-transform: uppercase;
+    }
+    
+    [data-testid="account:back-to-app"]:hover,
+    .button.button-solid-norm:hover {
+        background-color: rgba(109,74,255,1)!important;
+        backdrop-filter: blur(18px) saturate(0%)!important;
+        border: 1px solid rgba(209, 213, 219, 0.15)!important;
+    }
+    
+    .button.is-hover, .button:hover {
+        background-color: #6D4AFF;
+        color: #fff;
+        mix-blend-mode: screen;
+    }
+    
+    .item-container.item-is-selected {
+        background: linear-gradient(-25deg, #000 50%, #6D4AFF 130%);
+    }
+    
+    .items-column-list-container {
+        background-image: linear-gradient(0deg, #000 0%, #0f0318 100%);
+    }
+    
+    .item-checkbox:checked+.item-icon {
+        background-color: #6D4AFF;
+    }
+    
+    .item-is-selected .item-icon {
+        background-color: #6D4AFF;
+    }
+    
+    .main-area--with-toolbar,
+    .main-area-rounded--right,
+    .header {
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: top center;
+        background-image: linear-gradient(-40deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 90%, #000 100%), url('https://files.catbox.moe/ou10l0.png');
+    }
+    
+    .header--drawer,
+    .securityCenter .header--drawer {
+        background: black;
+    }
+    
+    .securityCenter {
+        background: black;
+    }
+
+    
+    .view-column-detail {
+        background: var(--email-message-view-background-color);
+    }
+    
+    .searchbox {
+        --field-background-color: var(--background-weak);
+        --field-hover-background-color: var(--field-background-color);
+        --field-focus-background-color: var(--search-field-focus-background);
+        --field-disabled-background-color: var(--field-background-color);
+        mix-blend-mode: luminosity;
+    }
+    
+    .item-sender-image {
+        background-color: #000;
+    }
+    
+    .item-container.unread {
+        background-color: #1a052a;
+    }
+    
+    [aria-current=page].navigation-link {
+        backdrop-filter: blur(18px) saturate(180%);
+        border: 1px solid rgba(209, 213, 219, 0.15);
+        background-color: rgba(255, 255, 255, .05);
+        mix-blend-mode: luminosity;
+    }
+    
+    .navigation-link-header-group-control:hover, .navigation-link-header-group-link:hover, .navigation-link:hover, .navigation-sublink:hover, .navigation-link-header-group-link[aria-expanded=true]:hover {
+        backdrop-filter: blur(18px) saturate(180%);
+        border: 1px solid rgba(209, 213, 219, 0.15);
+        background-color: rgba(0, 0, 0, .4);
+        mix-blend-mode: luminosity;
+    }
+    
+    .drawer-visibility-control-button {
+        background-color:black!important;
+        mix-blend-mode: screen;
+    }
+    
+    :root, .ui-standard {
+        --border-weak: rgba(209, 213, 219, 0.15);
+        --border-norm: rgba(209, 213, 219, 0.15);
+        --primary: #9f7dff;
+        --primary-major-1: #a687fb;
+        --primary-major-2: #b79dfe;
+        --primary-major-3: #d7c9ff;
+        --interaction-norm: #a687fb;
+        --interaction-norm-major-1: #a687fb;
+        --interaction-norm-major-2: rgba(209, 213, 219, 0.15);
+        --interaction-norm-major-3: #d7c9ff;
+        --text-weak: #fff;
+    }
+
+}
