@@ -10,7 +10,7 @@
 @homepageURL    https://github.com/tsubaki-kouryuu/ProtonWaifu
 @supportURL     https://github.com/tsubaki-kouryuu/ProtonWaifu
 
-@var text  image "Sidebar Background (Place in quotes)" '""'
+@var text waifu "Sidebar Background" "'https://files.catbox.moe/73ware.png'"
 
 ==/UserStyle== */
 
@@ -21,7 +21,7 @@
     }
     
     .sidebar {
-        background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%,  rgba(0, 0, 0, 0.25) 30%,  rgba(0, 0, 0, 0.25) 80%, rgba(0, 0, 0, 0.9) 100%), url('https://files.catbox.moe/73ware.png');
+        background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%,  rgba(0, 0, 0, 0.25) 30%,  rgba(0, 0, 0, 0.25) 80%, rgba(0, 0, 0, 0.9) 100%), url(waifu);
         background-size: cover;
         background-position: center;
         width: 17.625rem;
